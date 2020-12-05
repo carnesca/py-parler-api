@@ -26,7 +26,11 @@ Parler.com requires both a CAPTCHA solution and an SMS verification code every t
 
 ### Demos
 
-<< Link to scripts I made >>
+I've created 3 demos on how these functions can be used:
+
+1. [Download random data shown in the discover feed](/experiments/download_discover.py)
+2. [Download all posts which contains a specified hashtag](/experiments/download_hashtags.py)
+3. [Download domains from the posts shown in the affiliate's feed](/experiments/download_news.py)
 
 ### *Note*: 
 *Parler's API is not meant to be public-facing nor optimized for programatic use. Because of this, you can currently only retrieve up to 20 posts at a time. Therefore, any large amount of data will take a long time to retrieve.*  
