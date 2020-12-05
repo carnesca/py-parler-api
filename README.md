@@ -4,7 +4,7 @@
 
 This library is designed to easily programatically fetch data from the social media site Parler. The latest version can:
 
-* Download posts which use a specified hashtag
+* Download posts which contain a specified hashtag
 * Download posts from the discover feed
 * Download metadata/posts from the affiliate feed
 
@@ -27,6 +27,9 @@ Parler.com requires both a CAPTCHA solution and an SMS verification code every t
 ### Demos
 
 << Link to scripts I made >>
+
+### *Note*: 
+*Parler's API is not meant to be public-facing nor optimized for programatic use. Because of this, you can currently only retrieve up to 20 posts at a time. Therefore, any large amount of data will take a long time to retrieve.*  
   
   
  ## Disclaimer
