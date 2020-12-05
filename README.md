@@ -20,13 +20,7 @@ The cookie should be pasted here in the parler-main/parler.py file:
 
 ![Parler.py](/screenshots/parler_screenshot_2.jpg)
 
-## Examples
-
-### How to use functions
-
-<< Examples of available functions >>
-
-### Demos
+## Demos
 
 I've created 3 demos on how these functions can be used:
 
