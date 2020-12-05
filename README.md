@@ -7,7 +7,7 @@ This library is designed to easily programatically fetch data from the social me
 
 ### Authentication
 
-Parler.com requires both a CAPTCHA solution and an SMS verification code every time a user logs in. Therefore, you will need to use Inspect > Network > Headers > Request Headers to retrieve the cookie in order to make requests. You'll want to copy the entire cookie. 
+Parler.com requires both a CAPTCHA solution and an SMS verification code every time a user logs in. Therefore, you will need to first log into the platform in your browser, go through the CAPTCHA and SMS verifcation and use Inspect > Network > Headers > Request Headers to retrieve the cookie that was created in order to make requests with this repo. You'll want to copy the entire cookie: 
 
 ![Parler](parler_screenshot.png)
 
