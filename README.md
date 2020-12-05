@@ -1,7 +1,12 @@
 # Python Interface for Parler API
 
 ## About
-This library is designed to easily programatically fetch data from the social media site Parler. 
+
+This library is designed to easily programatically fetch data from the social media site Parler. The latest version can:
+
+* Download posts which use a specified hashtag
+* Download posts from the discover feed
+* Download metadata/posts from the affiliate feed
 
 ## How To:
 
