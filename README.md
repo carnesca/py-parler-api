@@ -1,6 +1,6 @@
 # Python Interface for Parler API
 
-### About
+## About
 This library is designed to easily programatically fetch data from the social media site Parler. 
 
 ## How To:
@@ -11,17 +11,17 @@ Parler.com requires both a CAPTCHA solution and an SMS verification code every t
 
 ![Parler](parler_screenshot.png)
 
-<<insert screenshot & instructions of where cookie value should be pasted.>>
+<< Insert screenshot & instructions of where cookie value should be pasted >>
 
 ## Examples
 
 ### How to use functions
 
-<<<Examples of available functions>>>
+<< Examples of available functions >>
 
 ### Demos
 
-<<<Link to scripts I made>>>
+<< Link to scripts I made >>
   
   
  ## Disclaimer
