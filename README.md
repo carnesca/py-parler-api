@@ -16,7 +16,9 @@ Parler.com requires both a CAPTCHA solution and an SMS verification code every t
 
 ![Parler](parler_screenshot.png)
 
-<< Insert screenshot & instructions of where cookie value should be pasted >>
+The cookie should be pasted here in the parler-main/parler.py file:
+
+![Parler.py](/screenshots/parler_screenshot_2.jpg)
 
 ## Examples
 
