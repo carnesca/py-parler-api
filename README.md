@@ -6,7 +6,7 @@ This library is designed to easily programatically fetch data from the social me
 
 * Download posts which contain a specified hashtag
 * Download posts from the discover feed
-* Download metadata/posts from the affiliate feed
+* Download metadata/posts from the affiliate's feed
 
 ## How To:
 
