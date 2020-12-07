@@ -26,7 +26,7 @@ I've created 3 demos on how these functions can be used:
 
 1. [Download random data shown in the discover feed](/demos/download_discover.py)
 2. [Get the top 20 hashtags by volume](/demos/top_hashtags.py)
-2. [Download all posts which contains a specified hashtag](/demos/hashtags_posts_feed.py)
+2. [Download all posts which contains a specified hashtag](/demos/hashtag_posts_feed.py)
 3. [Download domains from the posts shown in the affiliate's feed](/demos/affiliate_domains.py)
 
 ### *Note*: 
