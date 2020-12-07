@@ -7,7 +7,6 @@ from nltk.corpus import stopwords
 
 #stopwords
 stop = stopwords.words('english')
-stop.extend(["still", "going", "like", "i", "the", "would", "get"])
 
 #Retrieves all available data for specified hashtag
 def pageHashtagFeed(hashtag):
@@ -31,6 +30,6 @@ def pageHashtagFeed(hashtag):
     
 
     #Prints 10 most frequent words
-    df_disc_data["body_no_stopwords"] = df_disc_data["body"].apply([lambda x: ' '.join([word for word in x.split() if word not in stop and not word.startswith('#')])])
+    df_disc_data["body_no_stopwords"] = df_disc_data["body"].apply([lambda x: ' '.join([word for word in x.split() if word not in stop])])
     most_freq = pd.Series(' '.join(df_disc_data["body_no_stopwords"]).lower().strip().split()).value_counts()[:10]
     print(most_freq)
