@@ -24,9 +24,10 @@ The cookie should be pasted here in the parler-main/parler.py file:
 
 I've created 3 demos on how these functions can be used:
 
-1. [Download random data shown in the discover feed](/experiments/download_discover.py)
-2. [Download all posts which contains a specified hashtag](/experiments/download_hashtags.py)
-3. [Download domains from the posts shown in the affiliate's feed](/experiments/download_news.py)
+1. [Download random data shown in the discover feed](/downloads/download_discover.py)
+2. [Get the top 20 hashtags by volume](/demos/top_hashtags.py)
+2. [Download all posts which contains a specified hashtag](/experiments/hashtags_posts_feed.py)
+3. [Download domains from the posts shown in the affiliate's feed](/experiments/affiliate_domains.py)
 
 ### *Note*: 
 *Parler's API is not meant to be public-facing nor optimized for programatic use. Because of this, you can currently only retrieve up to 20 posts at a time. Therefore, any large amount of data will take a long time to retrieve.*  
