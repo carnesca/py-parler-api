@@ -20,9 +20,9 @@ The cookie should be pasted here in the parler-main/parler.py file:
 
 ![Parler.py](/screenshots/parler_screenshot_2.jpg)
 
-## Demos
+## Demo
 
-I've written some demos of how the functions can be used [here](demo_parler.ipynb)
+I've written some examples of how the functions can be used [here](demo_parler.ipynb)
 
 ### *Note*: 
 *Parler's API is not meant to be public-facing nor optimized for programatic use. Because of this, you can currently only retrieve up to 20 posts at a time. Therefore, any large amount of data will take a long time to retrieve.*  
