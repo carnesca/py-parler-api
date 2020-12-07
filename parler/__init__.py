@@ -1,7 +1,5 @@
 import requests
 import json
-import pandas as pd
-from tqdm import tqdm
 import time
 
 class Parler:
@@ -37,7 +35,7 @@ class Parler:
         response = requests.request("GET",url=url,headers=self.cookie,params=params)
         if self.handle_response(response).status_code != 200:
             print(f'Status: {response.status_code}')
-            sleep(5)
+            time.sleep(5)
             return self.getHashtags(q,limit,cursor)
         return response.json()
     
@@ -51,7 +49,7 @@ class Parler:
         response = requests.request("GET",url=url,headers=headers,params=params)
         if self.handle_response(response).status_code != 200:
             print(f'Status: {response.status_code}')
-            sleep(5)
+            time.sleep(5)
             return self.getHashtagFeed(hashtag,limit,cursor)
         return response.json()
     
@@ -65,7 +63,7 @@ class Parler:
         response = requests.request("GET",url=url,headers=headers)
         if self.handle_response(response).status_code != 200:
             print(f'Status: {response.status_code}')
-            sleep(5)
+            time.sleep(5)
             return self.getDiscoverFeed(limit,cursor)
         return response.json()
     
