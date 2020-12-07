@@ -6,11 +6,13 @@ import time
 
 class Parler():
     
+    # Defines base URL and the cookie. Once you log into the app, paste your cookie here. 
     def __init__(self):
         self.base = "https://api.parler.com/v1"
         self.cookie = {"paste-cookie-here"}
         self.reconnects = 0
         
+    # Handles HTTP responses
     def handle_response(self,response):
         if self.reconnects >= 10:
             raise Exception ("Internal abort; 10 reconnect attempts")
@@ -25,9 +27,23 @@ class Parler():
         else: 
             self.reconnects = 0
         return response
+
+    # Returns list of hashtags containing specified term and total posts which contain that hashtag
+    def getHashtags(self,q,limit=20,cursor=""):
+        url = self.base + '/hashtag'
+        params = (('search',q), ('limit',limit))
+        if cursor != "":
+            params = params + (("startkey",cursor),)
+        response = requests.request("GET",url=url,headers=self.cookie,params=params)
+        if self.handle_response(response).status_code != 200:
+            print(f'Status: {response.status_code}')
+            sleep(5)
+            reutrn self.getHashtags(q,limit,cursor)
+        return response.json()
     
+    # Returns list of posts containing a specified hashtag and metadata in JSON
     def getHashtagFeed(self,hashtag,limit=20,cursor=""):
-        url = self. base + "/post/hashtag"
+        url = self.base + "/post/hashtag"
         headers = cookie
         params = (("tag",hashtag),("limit",limit))
         if cursor != "":
@@ -39,6 +55,7 @@ class Parler():
             return self.getHashtagFeed(hashtag,limit,cursor)
         return response.json()
     
+    # Returns list of posts from discover feed and metadata in JSON
     def getDiscoverFeed(self,limit=20,cursor=""):
         url = self.base + "/discover/posts"
         params = (("limit",limit))
@@ -52,6 +69,7 @@ class Parler():
             return self.getDiscoverFeed(limit,cursor)
         return response.json()
     
+    # Returns list of posts from affiliates and metadata in JSON
     def getAffiliateFeed(self,limit=20,cursor=""):
         url = self.base + "/discover/news"
         params = (("limit",limit))
