@@ -30,4 +30,4 @@ I've written some examples of how the functions can be used [here](demo_parler.i
   
  ## Disclaimer
  
- I am in no way affiliated with Parler.com or any entity related to Parler.com. I am not responsible for what you do with this repo. 
+ I am in no way affiliated with Parler.com or any entity related to Parler.com. I am not responsible for what you do with this repository. 
