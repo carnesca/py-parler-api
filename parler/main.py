@@ -7,7 +7,7 @@ class Parler:
     # Defines base URL and the cookie. Once you log into the app, paste your cookie here. 
     def __init__(self):
         self.base = "https://api.parler.com/v1"
-        self.cookie = {"cookie": "mst=s%3AZYBOiM9xUTKauhOaElIYnTT63JTpxTphCJusxtyaOVdGjTCEkCDkNEIi3wonj3izIAIkPZPPg7yVv6pFSTX26ug3nEbAo2B7fikWpE2Km9DakydSfQbRiy65ouYIB1uH.XIGkDoMcgQEFAaWADMNWW0bLJtvwDlWWCByZamTvyaY; jst=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSWQiOiIxNzYyOTk4NSIsInVzZXJJZCI6MTIwMjU1MTQsInBlcm1pc3Npb25zIjoyNTYsInZlcmlmaWVkIjpmYWxzZSwiaWF0IjoxNjA2OTQxNDk3LCJleHAiOjE2MDY5NDE3OTd9.4edDEiB_liniG8i4-Y-lRyDPndERXqGecx9AeoWdmDIQ1lKyrko4Z27h6WNEM8VLBkAjDDFjmFOX_N8sShCtEQ"}
+        self.cookie = {"cookie": "paste-cookie-here"}
         self.reconnects = 0
         
     # Handles HTTP responses
